@@ -13,7 +13,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean package -DskipTests
     - name: Build the Docker image
-      run: docker build . --file ./Dockerfile --tag test_for_git_actions:$(date +%s)
+      run: docker build . --file Dockerfile --tag test_for_git_actions:$(date +%s)
     - name: Build the Docker image
       run: |
         docker version
