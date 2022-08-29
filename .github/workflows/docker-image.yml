@@ -1,5 +1,4 @@
-name: deploy to aliyun
-
+name: Docker Image CI
 on:
   push:
     branches: 
